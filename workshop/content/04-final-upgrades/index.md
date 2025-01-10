@@ -57,6 +57,19 @@ command: workbench.view.scm
 description: Open the Source Control view in editor
 ```
 
+```terminal:execute
+command: |
+  advisor build-config get
+  advisor build-config publish --url=${APP_ADVISOR_SERVER}
+  advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
+  advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER} --after-upgrade-cmd=spring-javaformat:apply
+description: Upgrade Sprin Boot from 3.3.x to 3.4.x
+```
+After making yourself aware of all the changes, **commit and push them**.
+```editor:execute-command
+command: workbench.view.scm
+description: Open the Source Control view in editor
+```
 
 Finally, let's check one more time that everything still works after we upgraded our application from 2.7 to the latest Spring Boot version!
 ```terminal:execute
