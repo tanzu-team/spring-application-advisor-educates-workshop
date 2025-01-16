@@ -7,4 +7,10 @@ In this workshop, we explored the capabilities of **Spring Application Advisor**
 Now it's time to start upgrading your applications!
 More information is available in the [official documentation](https://docs.vmware.com/en/Tanzu-Spring-Runtime/Commercial/Tanzu-Spring-Runtime/index-app-advisor.html).
 
-**You are qualified for an exclusive raffle! Please enter your name and email in [this](https://docs.google.com/document/d/todo) document to participate. Thank you!**
+**You've made it to the end of lab!**
+
+You're qualified for an exclusive raffle. Please enter your name and email in [this](https://docs.google.com/document/d/todo) document to participate.
+
+The raffle will take on February 5, 2025 at RTS/Advania Booth at 15:00
+
+
