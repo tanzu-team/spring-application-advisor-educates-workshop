@@ -11,8 +11,8 @@ More information is available in the [official documentation](https://docs.vmwar
 
 You're qualified for an exclusive raffle.
 
-Please enter your name and email in [this](https://docs.google.com/document/d/todo) document to participate.
+Please enter your name and email in [this](https://forms.gle/EuZkmfsXMDMuWVFP8) document to participate.
 
-The raffle will take on February 5, 2025 at **RTS/Advania Booth** at 15:00
+The raffle will take on February 5, 2025 at **Advania and Tanzu Spring Booth** at 15:00
 
 
