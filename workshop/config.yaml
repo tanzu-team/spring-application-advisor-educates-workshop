@@ -6,6 +6,7 @@ pathways:
       title: "Workshop"
 
       steps:
+      - 00-conference-introduction
       - 00-workshop-overview
       - 01-first-steps
       - 02-next-upgrade-steps
