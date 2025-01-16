@@ -9,8 +9,10 @@ More information is available in the [official documentation](https://docs.vmwar
 
 **You've made it to the end of lab!**
 
-You're qualified for an exclusive raffle. Please enter your name and email in [this](https://docs.google.com/document/d/todo) document to participate.
+You're qualified for an exclusive raffle.
 
-The raffle will take on February 5, 2025 at RTS/Advania Booth at 15:00
+Please enter your name and email in [this](https://docs.google.com/document/d/todo) document to participate.
+
+The raffle will take on February 5, 2025 at **RTS/Advania Booth** at 15:00
 
 
