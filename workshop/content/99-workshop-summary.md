@@ -11,7 +11,7 @@ More information is available in the [official documentation](https://docs.vmwar
 
 You're qualified for an exclusive raffle.
 
-Please enter your name and email in [this](https://forms.gle/EuZkmfsXMDMuWVFP8) document to participate or point to QR code:
+Please enter your name and email in [this](https://forms.gle/EuZkmfsXMDMuWVFP8) document or QR code below to participate:
 
 ![Jfokus2025-Raffle-Form](jfokus2025-raffle-form.png)
 
