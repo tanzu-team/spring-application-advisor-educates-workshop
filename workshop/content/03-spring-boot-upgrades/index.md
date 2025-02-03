@@ -37,4 +37,11 @@ url: {{< param  ingress_protocol >}}://petclinic-{{< param  session_name >}}.{{<
 session: 2
 ```
 
+{{< note >}}
+🏆 *Congratulations!* 🏆
+👍 You have finished the lab! 👍
 
+Feel free to [continue with optional steps](../04-final-upgrades) or go to
+
+[🏁 Workshop Summary 🏁](../99-workshop-summary)
+{{< /note >}}

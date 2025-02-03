@@ -7,7 +7,6 @@ To execute the further steps of our upgrade plan, we have to rerun the commands 
 advisor build-config get
 advisor build-config publish --url=${APP_ADVISOR_SERVER}
 advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
-
 ```
 If the first upgrade step was successfully applied, you should now see that the next step is the **Java 11 to 17 upgrade**, which is required for Spring Boot 3.x.
 
