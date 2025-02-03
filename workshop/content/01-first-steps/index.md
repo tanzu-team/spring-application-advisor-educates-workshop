@@ -31,8 +31,14 @@ The Spring Boot migration from Spring Boot version 2.7 to 3.x (and Spring Framew
 Without a *VMware Spring Enterprise* subscription, [Spring Boot 2.7 is end of support](https://spring.io/projects/spring-boot#support) since 11/2023, which means that no new security fixes will be released as open-source.
 
 Let's run *Spring PetClinic* to validate that it works before our upgrade.
+
 ```terminal:execute
-command: cd spring-petclinic && ./mvnw spring-boot:run
+command: cd spring-petclinic
+session: 2
+```
+
+```terminal:execute
+command: ./mvnw spring-boot:run
 session: 2
 ```
 

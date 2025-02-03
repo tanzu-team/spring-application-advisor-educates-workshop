@@ -84,3 +84,9 @@ url: {{< param  ingress_protocol >}}://petclinic-{{< param  session_name >}}.{{<
 ```terminal:interrupt
 session: 2
 ```
+
+{{< note >}}
+Feel free to [continue with optional steps](../05-continous-upgrades) or go to
+
+[🏁 Workshop Summary 🏁](../99-workshop-summary)
+{{< /note >}}
