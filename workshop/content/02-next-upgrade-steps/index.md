@@ -26,12 +26,12 @@ advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER} --after-upgrade-cmd=sprin
 We can validate that everything worked as expected by compiling and running our application again.
 As we upgraded our source code to Java 17, we have to change the Java runtime in our environment before.
 ```terminal:execute
-command: sdk use java $(sdk list java | grep installed | grep "17.*[0-9]-librca" | awk '{print $NF}' | head -n 1)
+command: sdk use java $(sdk list java | grep -E 'installed|local only' | grep '17.*[0-9]-librca' | awk '{print $NF}' | head -n 1)
 session: 1
 cascade: true
 ```
 ```terminal:execute
-command: sdk use java $(sdk list java | grep installed | grep "17.*[0-9]-librca" | awk '{print $NF}' | head -n 1)
+command: sdk use java $(sdk list java | grep -E 'installed|local only' | grep '17.*[0-9]-librca' | awk '{print $NF}' | head -n 1)
 session: 2
 hidden: true
 ```
