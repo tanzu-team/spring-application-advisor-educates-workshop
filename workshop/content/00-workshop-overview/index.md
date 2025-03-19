@@ -26,7 +26,7 @@ In addition to the recipes available as open-source, *Spring Application Advisor
 The native CLI is responsible for:
 - Generating the dependency tree and the build tool versions of a Git repository
 - Computing the upgrade plan, which is the list of Spring dependencies or tools that must be upgraded together (using *OpenRewrite* recipes) to the next release
-- Running the refactors that apply the corresponding dependency version changes and Java API upgrades, if needed, using the *OpenRewrite* recipes reported by the server
+- Running the refactors that apply the corresponding dependency version changes and Java API upgrades, if needed, using the *OpenRewrite* recipes
 - (Optional) Creating pull requests with the refactors
 
 It is assumed that the **CLI is integrated into the CI/CD pipeline**, so that the Git repositories are continuously analyzed and upgraded to the next version, if necessary. 
