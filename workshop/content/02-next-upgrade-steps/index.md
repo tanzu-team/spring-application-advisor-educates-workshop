@@ -50,11 +50,14 @@ session: 2
 
 
 You can either switch again to the *Source Control view* of the embedded editor to **commit and push the changes** or just run the following optional command to see the changes and push them.
-Don't forget to enter a commit message. Otherwise, you have to add it to the file that will be opened in the editor and close the file.
+
+
 ```editor:execute-command
 command: workbench.view.scm
 description: Open the "Source Control" view in editor
 ```
+Don't forget to enter a commit message. Otherwise, you have to add it to the file that will be opened in the editor and close the file.
+
 
 (Optional) View, commit, and push changes via the terminal
 ```terminal:execute
