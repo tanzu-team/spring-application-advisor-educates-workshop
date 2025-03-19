@@ -8,13 +8,12 @@ Finally, it's time for a more complex upgrade of our sample application that rea
 First, we need the latest upgrade plan.
 ```execute
 advisor build-config get
-advisor build-config publish --url=${APP_ADVISOR_SERVER}
-advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
+advisor upgrade-plan get 
 ```
 
 Let's run the Spring Boot 2.7 to 3.0 upgrade.
 ```execute
-advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER} --after-upgrade-cmd=spring-javaformat:apply
+advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
 ```
 
 By switching to the Source Control view in embedded editor, you can have a closer look at all the changes applied to our code base.

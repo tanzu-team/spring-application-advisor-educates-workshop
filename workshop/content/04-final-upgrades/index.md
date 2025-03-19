@@ -8,9 +8,8 @@ By adding the `--debug` option to `advisor build-config get` and `advisor upgrad
 ```terminal:execute
 command: |
   advisor build-config get --debug
-  advisor build-config publish --url=${APP_ADVISOR_SERVER}
-  advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
-  advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER} --after-upgrade-cmd=spring-javaformat:apply --debug
+  advisor upgrade-plan get 
+  advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply --debug
 ```
 
 After making yourself aware of all the changes of the Spring Boot 3.0.x to 3.1.x update, **commit and push them**.
@@ -25,9 +24,8 @@ description: Open the Source Control view in editor
 ```terminal:execute
 command: |
   advisor build-config get
-  advisor build-config publish --url=${APP_ADVISOR_SERVER}
-  advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
-  advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER} --after-upgrade-cmd=spring-javaformat:apply
+  advisor upgrade-plan get 
+  advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
 description: Upgrade Spring Boot from 3.1.x to 3.2.x
 cascade: true
 ```
@@ -46,9 +44,8 @@ description: Open the Source Control view in editor
 ```terminal:execute
 command: |
   advisor build-config get
-  advisor build-config publish --url=${APP_ADVISOR_SERVER}
-  advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
-  advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER} --after-upgrade-cmd=spring-javaformat:apply
+  advisor upgrade-plan get 
+  advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
 description: Upgrade Spring Boot from 3.2.x to 3.3.x
 ```
 After making yourself aware of all the changes, **commit and push them**.
@@ -60,9 +57,8 @@ description: Open the Source Control view in editor
 ```terminal:execute
 command: |
   advisor build-config get
-  advisor build-config publish --url=${APP_ADVISOR_SERVER}
-  advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
-  advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER} --after-upgrade-cmd=spring-javaformat:apply
+  advisor upgrade-plan get 
+  advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
 description: Upgrade Spring Boot from 3.3.x to 3.4.x
 ```
 After making yourself aware of all the changes, **commit and push them**.

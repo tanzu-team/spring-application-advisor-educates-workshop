@@ -71,24 +71,11 @@ The produced build configuration contains the dependency tree using the CycloneD
 file: ~/spring-petclinic/target/.advisor/build-config.json
 ```
 
-##### Publish a build configuration
-Next, we have to publish the build configuration to the *Spring Application Advisor Server*, which is running for you as part of this workshop.
-
-If we have a look at the related command, `advisor build-config publish`, there is a `path` option, for which we are fine with the default, and a required `--url` option to define the target *Spring Application Advisor Server*. 
-```execute
-advisor build-config publish --help
-```
-
-Use this command to publish the generated build configuration to the *Spring Application Advisor Server* running as part of this workshop.
-```execute
-advisor build-config publish --url=${APP_ADVISOR_SERVER}
-```
-
 ##### Analyze an upgrade plan
 
-With the information in the generated build configuration, the *Spring Application Advisor Server* is able to compute the upgrade plan, which we can view with the `advisor upgrade-plan get` command.
+With the information in the generated build configuration, the *Spring Application Advisor* is able to compute the upgrade plan, which we can view with the `advisor upgrade-plan get` command.
 ```execute
-advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
+advisor upgrade-plan get
 ```
 
 ##### Apply an upgrade plan from your local machine
@@ -109,7 +96,7 @@ For the sake of simplicity in this workshop, we run the steps to upgrade our cod
 
 The first step of our upgrade plan is to **upgrade Java from 8 to 11**. Let's run it!
 ```execute
-advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER}
+advisor upgrade-plan apply
 ```
 
 We can discover the changes made to our code base with the Git CLI.

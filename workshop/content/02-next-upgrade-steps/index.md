@@ -5,8 +5,7 @@ title: Next Upgrade Step and Configuration Options
 To execute the further steps of our upgrade plan, we have to rerun the commands that produce and publish the build configuration.
 ```execute
 advisor build-config get
-advisor build-config publish --url=${APP_ADVISOR_SERVER}
-advisor upgrade-plan get --url=${APP_ADVISOR_SERVER}
+advisor upgrade-plan get 
 
 ```
 If the first upgrade step was successfully applied, you should now see that the next step is the **Java 11 to 17 upgrade**, which is required for Spring Boot 3.x.
@@ -20,7 +19,7 @@ line: 115
 
 Fortunately, we can use the already introduced `--after-upgrade-cmd` option of the `advisor upgrade-plan apply` command to automatically execute the `spring-javaformat:apply` Maven goal after applying the upgrade plan. 
 ```execute
-advisor upgrade-plan apply --url=${APP_ADVISOR_SERVER} --after-upgrade-cmd=spring-javaformat:apply
+advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
 ```
 
 We can validate that everything worked as expected by compiling and running our application again.
