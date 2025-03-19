@@ -105,7 +105,7 @@ git status
 git --no-pager diff pom.xml
 ```
 
-But let's from now on use the related *Source Control view* of the Visual Stuio Code editor in the workshop environment.
+As an alternative, we can use the related *Source Control view* of the Visual Stuio Code editor in the workshop environment.
 ```editor:execute-command
 command: workbench.view.scm
 description: Open the "Source Control" view in editor
