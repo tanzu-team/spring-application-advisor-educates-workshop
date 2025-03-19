@@ -14,7 +14,7 @@ command: |
 
 After making yourself aware of all the changes, **commit and push them**.
 ```terminal:execute
-description: Output, Commit and push changes in terminal 
+description: Show, commit and push changes in terminal 
 command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.0 to 3.1" && git push
 session: 1
 ```
@@ -28,16 +28,11 @@ command: |
   advisor upgrade-plan get 
   advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
 description: Upgrade Spring Boot from 3.1.x to 3.2.x
-cascade: true
 ```
-```terminal:execute
-command: sed -i 's/>11</>17</g' pom.xml && clear
-description: Fix bug with OSS OpenRewrite recipe
-hidden: true
-```
+
 After making yourself aware of all the changes, **commit and push them**.
 ```terminal:execute
-description: Output, Commit and push changes in terminal 
+description: Show, commit and push changes in terminal 
 command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.1 to 3.2" && git push
 session: 1
 ```
@@ -52,7 +47,7 @@ description: Upgrade Spring Boot from 3.2.x to 3.3.x
 ```
 After making yourself aware of all the changes, **commit and push them**.
 ```terminal:execute
-description: Output, Commit and push changes in terminal 
+description: Show, commit and push changes in terminal 
 command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.2 to 3.3" && git push
 session: 1
 ```
@@ -67,7 +62,7 @@ description: Upgrade Spring Boot from 3.3.x to 3.4.x
 
 After making yourself aware of all the changes, **commit and push them**.
 ```terminal:execute
-description: Output, Commit and push changes in terminal 
+description: Show, commit and push changes in terminal 
 command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.3 to 3.4" && git push
 session: 1
 ```
