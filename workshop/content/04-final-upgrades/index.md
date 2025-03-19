@@ -12,12 +12,7 @@ command: |
   advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply --debug
 ```
 
-After making yourself aware of all the changes, **commit and push them** via the editor ...
-```editor:execute-command
-command: workbench.view.scm
-description: Open the Source Control view in editor
-```
-or terminal.
+After making yourself aware of all the changes, **commit and push them**.
 ```terminal:execute
 description: Output, Commit and push changes in terminal 
 command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.0 to 3.1" && git push
