@@ -24,6 +24,7 @@ description: Open the Source Control view in editor
 After making yourself aware of all the changes, **commit and push them**.
 (Optional) View, commit, and push changes via the terminal
 ```terminal:execute
+description: Output, Commit and push changes in terminal 
 command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 2.7 to 3.0" && git push
 session: 1
 ```
