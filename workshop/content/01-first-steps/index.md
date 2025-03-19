@@ -102,7 +102,7 @@ advisor upgrade-plan apply
 We can discover the changes made to our code base with the Git CLI.
 ```execute
 git status
-git diff pom.xml
+git --no-pager diff pom.xml
 ```
 
 But let's from now on use the related *Source Control view* of the Visual Stuio Code editor in the workshop environment.

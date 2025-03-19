@@ -2,12 +2,12 @@
 title: Next Upgrade Step and Configuration Options
 ---
 
-To execute the further steps of our upgrade plan, we have to rerun the commands that produce and publish the build configuration.
+To execute the further steps of our upgrade plan, we have to rerun the commands that produces the build configuration.
 ```execute
 advisor build-config get
 advisor upgrade-plan get 
-
 ```
+
 If the first upgrade step was successfully applied, you should now see that the next step is the **Java 11 to 17 upgrade**, which is required for Spring Boot 3.x.
 
 **Spring Application Advisor is trying to preserve your coding style** by doing the minimum required changes in the source files. However, it doesn't take Maven or Gradle formatters used in your projects, like in this case `spring-javaformat`, into account. 
@@ -47,9 +47,18 @@ url: {{< param  ingress_protocol >}}://petclinic-{{< param  session_name >}}.{{<
 session: 2
 ```
 
-Switch to the *Source Control view* of the embedded editor to **commit and push the changes**.
+
+
+You can either switch again to the *Source Control view* of the embedded editor to **commit and push the changes** or just run the following optional command to see the changes and push them.
 Don't forget to enter a commit message. Otherwise, you have to add it to the file that will be opened in the editor and close the file.
 ```editor:execute-command
 command: workbench.view.scm
 description: Open the "Source Control" view in editor
+```
+
+(Optional) View, commit, and push changes via the terminal
+```terminal:execute
+description: Output, Commit and push changes in terminal 
+command: git --no-pager diff && git add . && git commit -m "Upgrading Java 8 to 11" && git push
+session: 1
 ```

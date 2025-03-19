@@ -12,10 +12,16 @@ command: |
   advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply --debug
 ```
 
-After making yourself aware of all the changes of the Spring Boot 3.0.x to 3.1.x update, **commit and push them**.
+After making yourself aware of all the changes, **commit and push them** via the editor ...
 ```editor:execute-command
 command: workbench.view.scm
 description: Open the Source Control view in editor
+```
+or terminal.
+```terminal:execute
+description: Output, Commit and push changes in terminal 
+command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.0 to 3.1" && git push
+session: 1
 ```
 
 #### (Optional) Upgrade to the latest Spring Boot release
@@ -34,10 +40,16 @@ command: sed -i 's/>11</>17</g' pom.xml && clear
 description: Fix bug with OSS OpenRewrite recipe
 hidden: true
 ```
-After making yourself aware of all the changes, **commit and push them**.
+After making yourself aware of all the changes, **commit and push them** via the editor ...
 ```editor:execute-command
 command: workbench.view.scm
 description: Open the Source Control view in editor
+```
+or terminal.
+```terminal:execute
+description: Output, Commit and push changes in terminal 
+command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.1 to 3.2" && git push
+session: 1
 ```
 
 
@@ -48,10 +60,16 @@ command: |
   advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
 description: Upgrade Spring Boot from 3.2.x to 3.3.x
 ```
-After making yourself aware of all the changes, **commit and push them**.
+After making yourself aware of all the changes, **commit and push them** via the editor ...
 ```editor:execute-command
 command: workbench.view.scm
 description: Open the Source Control view in editor
+```
+or terminal.
+```terminal:execute
+description: Output, Commit and push changes in terminal 
+command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.2 to 3.3" && git push
+session: 1
 ```
 
 ```terminal:execute
@@ -61,10 +79,16 @@ command: |
   advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
 description: Upgrade Spring Boot from 3.3.x to 3.4.x
 ```
-After making yourself aware of all the changes, **commit and push them**.
+After making yourself aware of all the changes, **commit and push them** via the editor ...
 ```editor:execute-command
 command: workbench.view.scm
 description: Open the Source Control view in editor
+```
+or terminal.
+```terminal:execute
+description: Output, Commit and push changes in terminal 
+command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.3 to 3.4" && git push
+session: 1
 ```
 
 Finally, let's check again to see if everything still works after upgrading our application from 2.7 to the latest Spring Boot version!

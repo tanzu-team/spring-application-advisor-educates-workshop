@@ -22,6 +22,11 @@ command: workbench.view.scm
 description: Open the Source Control view in editor
 ```
 After making yourself aware of all the changes, **commit and push them**.
+(Optional) View, commit, and push changes via the terminal
+```terminal:execute
+command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 2.7 to 3.0" && git push
+session: 1
+```
 
 Feel free to also run the application to ensure everyting still works.
 ```terminal:execute
