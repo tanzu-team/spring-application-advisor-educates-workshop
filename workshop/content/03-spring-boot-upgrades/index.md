@@ -22,6 +22,8 @@ command: workbench.view.scm
 description: Open the Source Control view in editor
 ```
 After making yourself aware of all the changes, **commit and push them**.
+
+
 (Optional) View, commit, and push changes via the terminal
 ```terminal:execute
 description: Output, Commit and push changes in terminal 
