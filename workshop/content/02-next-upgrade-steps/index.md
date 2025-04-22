@@ -62,6 +62,6 @@ Don't forget to enter a commit message. Otherwise, you have to add it to the fil
 (Optional) View, commit, and push changes via the terminal
 ```terminal:execute
 description: Show, commit and push changes in terminal 
-command: git --no-pager diff && git add . && git commit -m "Upgrading Java 8 to 11" && git push
+command: git --no-pager diff && git add . && git commit -m "Upgrading Java 11 to 17" && git push
 session: 1
 ```
