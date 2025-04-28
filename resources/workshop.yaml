@@ -1,7 +1,3 @@
-#@ load("@ytt:data", "data")
-#@ load("@ytt:json", "json")
-#@ load("@ytt:base64", "base64")
----
 apiVersion: training.educates.dev/v1beta1
 kind: Workshop
 metadata:
