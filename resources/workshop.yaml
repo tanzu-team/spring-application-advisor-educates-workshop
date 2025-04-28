@@ -12,16 +12,16 @@ spec:
   publish:
     image: "$(image_repository)/spring-application-advisor-files:$(workshop_version)"
   workshop:
-    image: "ghcr.io/timosalm/spring-application-advisor-workshop/workshop-image:main"
+    image: "ghcr.io/tanzu-team/spring-application-advisor-educates-workshop/workshop-image:main"
     files:
     - git:
-        url: https://github.com/timosalm/spring-application-advisor-workshop
+        url: https://github.com/tanzu-team/spring-application-advisor-educates-workshop
         ref: origin/main
       includePaths:
       - /workshop/**
   environment: 
     secrets:
-    - name: spring-application-advisor-workshop-image-pull-secret
+    - name: tanzu-team-pull-secret
       namespace: educates
   session:
     namespaces:
@@ -45,14 +45,4 @@ spec:
         enabled: true
     patches:
       imagePullSecrets:
-      - name: spring-application-advisor-workshop-image-pull-secret
-    objects:
-    - apiVersion: v1
-      kind: Secret
-      metadata:
-        name: spring-application-advisor-workshop-image-pull-secret
-      type: kubernetes.io/dockerconfigjson
-      data:
-        #@ registry_creds = {"username": data.values.sensitive.workshops.spring_app_advisor.workshop_image.username, "password": data.values.sensitive.workshops.spring_app_advisor.workshop_image.password}
-        #@ encoded_creds = base64.encode(json.encode({"auths": {"ghcr.io": registry_creds}}))
-        .dockerconfigjson: #@ encoded_creds
+      - name: tanzu-team-pull-secret
