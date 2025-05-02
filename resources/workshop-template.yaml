@@ -1,22 +1,28 @@
+#@ load("@ytt:data", "data")
+---
 apiVersion: training.educates.dev/v1beta1
 kind: Workshop
 metadata:
-  name: "spring-application-advisor"
+  name: #@ 'spring-application-advisor' if data.values.branch == 'main' else 'spring-application-advisor-' + data.values.branch
 spec:
   title: "Spring Application Advisor Introduction"
   description: "A workshop that demonstrates how Spring Application Advisor can help you to  continuously and incrementally upgrade Spring application dependencies, source code and configuration"
   publish:
     image: "$(image_repository)/spring-application-advisor-files:$(workshop_version)"
   workshop:
-    image: "ghcr.io/tanzu-team/spring-application-advisor-educates-workshop/workshop-image:main"
+    image: #@ 'ghcr.io/tanzu-team/spring-application-advisor-educates-workshop/workshop-image:' + data.values.branch
     files:
     - git:
         url: https://github.com/tanzu-team/spring-application-advisor-educates-workshop
-        ref: origin/main
+        ref: #@ 'origin/' + data.values.branch
+        secretRef:
+          name: tanzu-team-git-auth-secret
       includePaths:
       - /workshop/**
   environment: 
     secrets:
+    - name: tanzu-team-git-auth-secret
+      namespace: educates
     - name: tanzu-team-pull-secret
       namespace: educates
   session:
