@@ -2,7 +2,7 @@
 title: Introducing Spring Application Advisor
 ---
 
-**Spring Application Advisor** [(Docs)](https://docs.vmware.com/en/Tanzu-Spring-Runtime/Commercial/Tanzu-Spring-Runtime/index-app-advisor.html) is a *VMware Tanzu Spring* capability for continuously and incrementally upgrading Spring dependencies in all your Git repositories.
+**Spring Application Advisor** [(Docs)](https://techdocs.broadcom.com/us/en/vmware-tanzu/spring/spring-application-advisor/1-2/spring-app-advisor/what-is-app-advisor.html) is a *VMware Tanzu Spring* capability for continuously and incrementally upgrading Spring dependencies in all your Git repositories.
 
 Spring Application Advisor detects if there is a new version available for upgrading your Spring dependencies, and automatically applies necessary changes in your build configuration and Java files with the help of **OpenRewrite**.
 
