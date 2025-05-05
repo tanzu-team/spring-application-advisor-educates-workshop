@@ -27,7 +27,6 @@ command: |
   advisor build-config get
   advisor upgrade-plan get 
   advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
-description: Upgrade Spring Boot from 3.1.x to 3.2.x
 ```
 
 After making yourself aware of all the changes, **commit and push them**.
@@ -43,7 +42,6 @@ command: |
   advisor build-config get
   advisor upgrade-plan get 
   advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
-description: Upgrade Spring Boot from 3.2.x to 3.3.x
 ```
 After making yourself aware of all the changes, **commit and push them**.
 ```terminal:execute
@@ -57,7 +55,6 @@ command: |
   advisor build-config get
   advisor upgrade-plan get 
   advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
-description: Upgrade Spring Boot from 3.3.x to 3.4.x
 ```
 
 After making yourself aware of all the changes, **commit and push them**.
