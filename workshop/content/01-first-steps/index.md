@@ -94,7 +94,14 @@ Last but not least, there is a `--from-yml` option, that references a `spring-ap
 
 For the sake of simplicity in this workshop, we run the steps to upgrade our code base locally and not in a CI/CD pipeline, and without the `--push` option, as pull requests are not part of Git itself, but available at providers like GitHub, GitLab ,or Bitbucket.
 
-The first step of our upgrade plan is to **upgrade Java from 8 to 11**. Let's run it!
+The first step of our upgrade plan is to **upgrade Java from 8 to 11**. 
+As some of the latest recipes require Java 17 to be executed, let's set it for the terminal where we run the advisor CLI.
+```terminal:execute
+command: sdk use java $(sdk list java | grep -E 'installed|local only' | grep '17.*[0-9]-librca' | awk '{print $NF}' | head -n 1)
+session: 1
+```
+
+Let's finally run the upgrade!
 ```execute
 advisor upgrade-plan apply
 ```
