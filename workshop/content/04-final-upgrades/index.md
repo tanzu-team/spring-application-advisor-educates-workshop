@@ -64,6 +64,21 @@ command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boo
 session: 1
 ```
 
+#### Upgrade Spring Boot from 3.4.x to 3.5.x
+```terminal:execute
+command: |
+  advisor build-config get
+  advisor upgrade-plan get 
+  advisor upgrade-plan apply --after-upgrade-cmd=spring-javaformat:apply
+```
+
+After making yourself aware of all the changes, **commit and push them**.
+```terminal:execute
+description: Show, commit and push changes in terminal 
+command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.3 to 3.4" && git push
+session: 1
+```
+
 
 
 Finally, let's check again to see if everything still works after upgrading our application from 2.7 to the latest Spring Boot version!
