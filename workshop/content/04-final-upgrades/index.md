@@ -75,7 +75,7 @@ command: |
 After making yourself aware of all the changes, **commit and push them**.
 ```terminal:execute
 description: Show, commit and push changes in terminal 
-command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.3 to 3.4" && git push
+command: git --no-pager diff && git add . && git commit -m "Upgrading Spring Boot 3.4 to 3.5" && git push
 session: 1
 ```
 
