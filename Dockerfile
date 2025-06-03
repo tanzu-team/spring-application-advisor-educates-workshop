@@ -63,7 +63,10 @@ RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
   mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:java-recipes:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository
 RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
   mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:javaee-boot-recipes:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository
-
+RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
+  mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:cf-deployment:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository
+RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
+  mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:rewrite-spring:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository
 COPY <<EOF .m2/settings.xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
