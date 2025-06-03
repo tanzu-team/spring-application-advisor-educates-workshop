@@ -20,7 +20,7 @@ line: 1
 ```
 ```editor:select-matching-text
 file: ~/spring-petclinic/pom.xml
-text: "<version>2.7.3</version>"
+text: "<version>2.7.18</version>"
 ```
 ```editor:select-matching-text
 file: ~/spring-petclinic/pom.xml
