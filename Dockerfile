@@ -64,10 +64,6 @@ RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
 RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
   mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:java-recipes:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository
 RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
-  mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:javaee-boot-recipes:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository
-RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
-  mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:cf-deployment:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository
-RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
   mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:rewrite-spring:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository
 RUN --mount=type=secret,id=app_advisor_commercial_recipes_version \
   mvn dependency:get -DrepoUrl=https://packages.broadcom.com/artifactory/spring-enterprise -Dartifact=com.vmware.tanzu.spring.recipes:rewrite-hibernate:$(cat /run/secrets/app_advisor_commercial_recipes_version) -s mvn-settings.xml -Dmaven.repo.local=.m2/repository 
