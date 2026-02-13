@@ -4,8 +4,7 @@ title: Next Upgrade Step and Configuration Options
 
 To execute the further steps of our upgrade plan, we have to rerun the commands that produces the build configuration.
 ```execute
-advisor build-config get
-advisor upgrade-plan get 
+advisor build-config get && advisor upgrade-plan get 
 ```
 
 If the first upgrade step was successfully applied, you should now see that the next step is the **Java 11 to 17 upgrade**, which is required for Spring Boot 3.x.
