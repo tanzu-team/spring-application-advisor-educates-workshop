@@ -7,8 +7,7 @@ Finally, it's time for a more complex upgrade of our sample application that rea
 
 First, we need the latest upgrade plan.
 ```execute
-advisor build-config get
-advisor upgrade-plan get 
+advisor build-config get && advisor upgrade-plan get 
 ```
 
 Let's run the Spring Boot 2.7 to 3.0 upgrade.
